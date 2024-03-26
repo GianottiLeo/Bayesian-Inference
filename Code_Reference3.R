@@ -1,4 +1,4 @@
-# vetor de par‚mtros
+# vetor de par√¢mtros
 theta <- rep(0.25, 4)
 # tamanho da amostra
 n0 <- 100
@@ -22,15 +22,15 @@ dados_posteriori <- as.data.frame(amostra_pos)
 colnames(dados_posteriori) <- c("theta1", "theta2", "theta3", "theta4")
 head(dados_posteriori)
 par(mfrow = c(2, 2))
-hist(dados_posteriori$theta1, main = "DistribuiÁ„o marginal de theta_1")
+hist(dados_posteriori$theta1, main = "Distribui√ß√£o marginal de theta_1")
 lines(density(dados_posteriori$theta1), col = "red")
-hist(dados_posteriori$theta1, main = "DistribuiÁ„o marginal de theta_2")
+hist(dados_posteriori$theta1, main = "Distribui√ß√£o marginal de theta_2")
 lines(density(dados_posteriori$theta1), col = "red")
-hist(dados_posteriori$theta1, main = "DistribuiÁ„o marginal de theta_3")
+hist(dados_posteriori$theta1, main = "Distribui√ß√£o marginal de theta_3")
 lines(density(dados_posteriori$theta1), col = "red")
-hist(dados_posteriori$theta1, main = "DistribuiÁ„o marginal de theta_4")
+hist(dados_posteriori$theta1, main = "Distribui√ß√£o marginal de theta_4")
 lines(density(dados_posteriori$theta1), col = "red")
-# valores dos par‚metros
+# valores dos par√¢metros
 alpha <- 2
 beta <- 3
 sigma2 <- 5
@@ -61,10 +61,10 @@ summary(beta_pos)
 round(sd(beta_pos), 3)
 # Figuras
 par(mfrow = c(2,2))
-plot(x, y, main = "Gr·fico de dispers„o")
-hist(sigma2_pos, main = "DistribuiÁ„o marginal a posteriori de sigma2")
+plot(x, y, main = "Gr√°fico de dispers√£o")
+hist(sigma2_pos, main = "Distribui√ß√£o marginal a posteriori de sigma2")
 lines(density(sigma2_pos), col = "red")
-hist(alpha_pos, main = "DistribuiÁ„o marginal a posteriori de alpha")
+hist(alpha_pos, main = "Distribui√ß√£o marginal a posteriori de alpha")
 lines(density(alpha_pos), col = "red")
-hist(beta_pos, main = "DistribuiÁ„o marginal a posteriori de beta")
+hist(beta_pos, main = "Distribui√ß√£o marginal a posteriori de beta")
 lines(density(beta_pos), col = "red")
